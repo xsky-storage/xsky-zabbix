@@ -23,7 +23,7 @@ No specific Zabbix configuration is required.
 ### Macros used
 
 |Name|Description|Default|
-|----|----|----|----|
+|----|----|----|
 |{$XMS_ACCESS_TOKEN}|XMS Access Token||
 |{$XMS_API_IP}|XMS API Admin IP Address||
 |{$XMS_API_PORT}|XMS API Port|8051|
