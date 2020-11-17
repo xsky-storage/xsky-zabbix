@@ -55,7 +55,7 @@ There are no template links in this template.
 |XMS NFS-Gateways Discovery|NFS Gateways in Storage Cluster|HTTP agent|xms.os_nfs_gateways.discovery|
 |XMS OS-Bucket Discovery|Object Storage Buckets in Storage Cluster|HTTP agent|xms.os_buckets.discovery|
 |XMS OS-User Discovery|Object Storage Users in Storage Cluster|HTTP agent|xms.os_users.discovery|
-|XMS OS-Zones Discovery|Object Storage Zones in Storage Cluster|HTTP agen|xms.os_zones.discovery|
+|XMS OS-Zones Discovery|Object Storage Zones in Storage Cluster|HTTP agent|xms.os_zones.discovery|
 |XMS OSD Discovery|OSDs in Storage Cluster|HTTP agent|xms.host.osds.discovery|
 |XMS POOL Discovery|Storage Pools|HTTP agent|xms.pools.discovery|
 |XMS S3 Load Balancer Discovery|S3 Load Balancers in Storage Cluster|HTTP agent|xms.os_s3_load_balancers.discovery|
@@ -106,7 +106,7 @@ There are no template links in this template.
 |Pool {#POOLNAME} Status Is degraded|Check if capacity usage of pool is degraded||Warning||
 |Pool {#POOLNAME} Status Is error|Check if pool status is error||Disaster||
 |Pool {#POOLNAME} Status Is full|Check if pool status is full||Disaster||
-|S3 Load Balancer {#XMS_S3_LOAD_BALANCER_NAME} Active Connections Are Greater Than {$XMS_S3_LOAD_BALANCER_ACTIVE_CONNECTIONS.WARN}|Check if active connnections of s3 load balancer is warning|Warning||
+|S3 Load Balancer {#XMS_S3_LOAD_BALANCER_NAME} Active Connections Are Greater Than {$XMS_S3_LOAD_BALANCER_ACTIVE_CONNECTIONS.WARN}|Check if active connnections of s3 load balancer is warning||Warning||
 |S3 Load Balancer {#XMS_S3_LOAD_BALANCER_NAME} CPU Usage is Greater Than {$XMS_S3_LOAD_BALANCER_CPU_UTIL.WARN}%|Check if cpu usage of s3 load balancer is warning||Warning||
 |S3 Load Balancer {#XMS_S3_LOAD_BALANCER_NAME} Memory Usage is Greater Than {$XMS_S3_LOAD_BALANCER_MEM_USAGE_PERCENT.WARN}%|Check if memory usage of s3 load balancer is warning||Warning||
 |S3 Load Balancer {#XMS_S3_LOAD_BALANCER_NAME} Status Is Error|Check if s3 load balancer status is error||Disaster||
