@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.4</version>
-    <date>2020-10-20T10:24:19Z</date>
+    <date>2020-11-20T05:58:46Z</date>
     <groups>
         <group>
             <name>Template</name>
@@ -597,17 +597,17 @@
                             </master_item>
                             <trigger_prototypes>
                                 <trigger_prototype>
-                                    <expression>{last()}&gt;={#OSD_TOTALKBYTE}*{$XMS_OSDS_USED_BYTE.MAX.DISASTER}/100</expression>
+                                    <expression>{last()}&gt;={#OSD_TOTALKBYTE}*{$XMS_OSDS_USED_BYTE.MAX.DISASTER}/100*1024</expression>
                                     <recovery_mode>RECOVERY_EXPRESSION</recovery_mode>
-                                    <recovery_expression>{last()}&lt;{#OSD_TOTALKBYTE}*{$XMS_OSDS_USED_BYTE.MAX.DISASTER}/100</recovery_expression>
+                                    <recovery_expression>{last()}&lt;{#OSD_TOTALKBYTE}*{$XMS_OSDS_USED_BYTE.MAX.DISASTER}/100*1024</recovery_expression>
                                     <name>Host {#HOSTNAME} {#OSDNAME} Data Usage Is Greater Than {$XMS_OSDS_USED_BYTE.MAX.DISASTER}%</name>
                                     <priority>DISASTER</priority>
                                     <manual_close>YES</manual_close>
                                 </trigger_prototype>
                                 <trigger_prototype>
-                                    <expression>{last()}&gt;={#OSD_TOTALKBYTE}*{$XMS_OSDS_USED_BYTE.MAX.WARN}/100</expression>
+                                    <expression>{last()}&gt;={#OSD_TOTALKBYTE}*{$XMS_OSDS_USED_BYTE.MAX.WARN}/100*1024</expression>
                                     <recovery_mode>RECOVERY_EXPRESSION</recovery_mode>
-                                    <recovery_expression>{last()}&lt;{#OSD_TOTALKBYTE}*{$XMS_OSDS_USED_BYTE.MAX.WARN}/100</recovery_expression>
+                                    <recovery_expression>{last()}&lt;{#OSD_TOTALKBYTE}*{$XMS_OSDS_USED_BYTE.MAX.WARN}/100*1024</recovery_expression>
                                     <name>Host {#HOSTNAME} {#OSDNAME} Data Usage Is Greater Than {$XMS_OSDS_USED_BYTE.MAX.WARN}%</name>
                                     <priority>WARNING</priority>
                                     <manual_close>YES</manual_close>
@@ -2888,23 +2888,23 @@
                             </master_item>
                             <trigger_prototypes>
                                 <trigger_prototype>
-                                    <expression>{last()}&gt;={#POOLSTATUS_ACTUAL_KBYTE}*{$XMS_POOL_DATA_KBYTE.MAX.DISASTER}/100</expression>
+                                    <expression>{last()}&gt;={#POOLSTATUS_ACTUAL_KBYTE}*{$XMS_POOL_DATA_KBYTE.MAX.DISASTER}/100*1024</expression>
                                     <recovery_mode>RECOVERY_EXPRESSION</recovery_mode>
-                                    <recovery_expression>{last()}&lt;{#POOLSTATUS_ACTUAL_KBYTE}*{$XMS_POOL_DATA_KBYTE.MAX.DISASTER}/100</recovery_expression>
+                                    <recovery_expression>{last()}&lt;{#POOLSTATUS_ACTUAL_KBYTE}*{$XMS_POOL_DATA_KBYTE.MAX.DISASTER}/100*1024</recovery_expression>
                                     <name>Pool {#POOLNAME} Capacity Usage Is Greater Than {$XMS_POOL_DATA_KBYTE.MAX.DISASTER}%</name>
                                     <priority>DISASTER</priority>
                                 </trigger_prototype>
                                 <trigger_prototype>
-                                    <expression>{last()}&gt;={#POOLSTATUS_ACTUAL_KBYTE}*{$XMS_POOL_DATA_KBYTE.MAX.HIGH}/100</expression>
+                                    <expression>{last()}&gt;={#POOLSTATUS_ACTUAL_KBYTE}*{$XMS_POOL_DATA_KBYTE.MAX.HIGH}/100*1024</expression>
                                     <recovery_mode>RECOVERY_EXPRESSION</recovery_mode>
-                                    <recovery_expression>{last()}&lt;{#POOLSTATUS_ACTUAL_KBYTE}*{$XMS_POOL_DATA_KBYTE.MAX.HIGH}/100</recovery_expression>
+                                    <recovery_expression>{last()}&lt;{#POOLSTATUS_ACTUAL_KBYTE}*{$XMS_POOL_DATA_KBYTE.MAX.HIGH}/100*1024</recovery_expression>
                                     <name>Pool {#POOLNAME}  Capacity Usage Is Greater Than {$XMS_POOL_DATA_KBYTE.MAX.HIGH}%</name>
                                     <priority>HIGH</priority>
                                 </trigger_prototype>
                                 <trigger_prototype>
-                                    <expression>{last()}&gt;={#POOLSTATUS_ACTUAL_KBYTE}*{$XMS_POOL_DATA_KBYTE.MAX.WARN}/100</expression>
+                                    <expression>{last()}&gt;={#POOLSTATUS_ACTUAL_KBYTE}*{$XMS_POOL_DATA_KBYTE.MAX.WARN}/100*1024</expression>
                                     <recovery_mode>RECOVERY_EXPRESSION</recovery_mode>
-                                    <recovery_expression>{last()}&lt;{#POOLSTATUS_ACTUAL_KBYTE}*{$XMS_POOL_DATA_KBYTE.MAX.WARN}/100</recovery_expression>
+                                    <recovery_expression>{last()}&lt;{#POOLSTATUS_ACTUAL_KBYTE}*{$XMS_POOL_DATA_KBYTE.MAX.WARN}/100*1024</recovery_expression>
                                     <name>Pool {#POOLNAME} Capacity Usage Is Greater Than {$XMS_POOL_DATA_KBYTE.MAX.WARN}%</name>
                                     <priority>WARNING</priority>
                                 </trigger_prototype>
@@ -3218,7 +3218,7 @@
             <macros>
                 <macro>
                     <macro>{$XMS_ACCESS_TOKEN}</macro>
-                    <value>19881eae57bf4e569fe5d71780325e34</value>
+                    <value>d862495fc8304b738e537d9c121ce2a6</value>
                     <description>XMS Access Token</description>
                 </macro>
                 <macro>
